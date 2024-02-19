@@ -12,18 +12,23 @@ html{
 body{
     background: #080808;
     color: whitesmoke;
+    margin-top: 60px;
+    background-image: url(images/background.png);
 }
+
 
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/header.png); */
+    /* background-image: url(images/background.png); */
     background-size: cover;
     background-position: center;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .container{
-    padding: 10px 8%;
+    padding: 10px;
 }
 
 nav{
@@ -31,10 +36,16 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #080808;
 }
 
 .logo{
-    width: 140px;
+    width: 100px;
 }
 
 nav ul li{
@@ -98,7 +109,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 25%;
+    flex-basis: 35%;
 }
 
 .about-col-1 img{
@@ -171,7 +182,7 @@ nav ul li a:hover::after{
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -325,16 +336,17 @@ nav .fa-solid{
 @media only screen and (max-width: 600px) {
     .header-text h1{
         font-size: 2rem;
-        margin-top: 100%;
+        margin-top: 60%;
     }
     
     .header-text p{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     nav .fa-solid{
         display: block;
         font-size: 2rem;
+        margin-right: 20px;
     }
 
     nav ul{
@@ -360,20 +372,38 @@ nav .fa-solid{
         left: 25px;
     }
 
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #080808;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.7s;
+    }
+
     /* about */
+    body{
+        background-image: url(images/background-phone.png);
+    }
+
     .sub-text{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .about-col-1, .about-col-2{
-        flex-basis: 70%;
+        /* flex-basis: 60%; */
+        margin-left: 30px;
     }
 
     .about-col-1{
         margin-bottom: 30px;
+        flex-basis: 30%;
     }
     .about-col-2{
         font-size: 1.7rem;
+        flex-basis: 50%;
     }
 
     .tab.links{
