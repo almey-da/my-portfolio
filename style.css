@@ -65,7 +65,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1B3F8B;
+    background: #385dae;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -92,7 +92,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #1B3F8B;
+    color: #385dae;
 }
 
 /* about */
@@ -125,6 +125,8 @@ nav ul li a:hover::after{
     font-size: 1.7rem;
     font-weight: 600;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .tab-titles{
@@ -144,7 +146,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #1B3F8B;
+    background: #385dae;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -162,7 +164,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #1B3F8B;
+    color: #385dae;
     font-size: 1rem;
 }
 
@@ -173,6 +175,39 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+.tab-c{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+}
+
+.tab-c::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #385dae;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.certificates{
+    top: 100px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.certificates:hover{
+    color: #385dae;
+    cursor: pointer;
+}
+
 
 /* portfolio */
 
@@ -193,6 +228,31 @@ nav ul li a:hover::after{
     overflow: hidden;
 }
 
+.sub-text-1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.github-icon{
+    color: #385dae;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.github-icon:hover{
+    color: #fff;
+}
+
 .work img{
     width: 100%;
     border-radius: 10px;
@@ -203,7 +263,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #1B3F8B);
+    background: linear-gradient(rgba(0,0,0,0.6), #385dae);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -228,7 +288,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #1B3F8B;
+    color: #385dae;
     text-decoration: none;
     font-size: 1rem;
     line-height: 60px;
@@ -262,7 +322,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #1B3F8B;
+    color: #385dae;
     margin-right: 15px;
     font-size: 1rem;
 }
@@ -281,7 +341,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: #1B3F8B;
+    color: #385dae;
     transform: translateY(-5px);
 }
 
@@ -289,12 +349,12 @@ nav ul li a:hover::after{
     display: inline-block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #1B3F8B;
+    border: 1px solid #385dae;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
-    background:#1B3F8B;
+    background:#385dae;
     cursor: pointer;
 }
 
@@ -350,7 +410,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #1B3F8B;
+        background: #385dae;
         position: fixed;
         top: 0;
         right: -200px;
