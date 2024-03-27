@@ -87,7 +87,7 @@ nav ul li a:hover::after{
 }
 
 .header-text p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 10px;
 }
 
@@ -305,6 +305,14 @@ nav ul li a:hover::after{
 
 .work:hover .layer{
     height: 100%;
+}
+
+#skills a {
+    font-size: 1rem;
+}
+
+#skills a:hover {
+    color: #385dae;
 }
 
 
